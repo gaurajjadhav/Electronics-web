@@ -1,0 +1,296 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    ;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #21212a, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* Adjust the padding to the height of the navbar */
+}
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #21212a, #000000); /* Add background to match the body */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+#nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+}
+#navh4 {
+    padding-left: 600px;
+    justify-content: right;
+    gap: 10vw;
+    align-items:center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(238, 238, 238);
+    transition: transform 0.3s ease;
+}
+#navh4_2 {
+    gap: 10vw;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(238, 238, 238);
+    transition: transform 0.3s ease;
+}
+#navh4_3 {
+    gap: 100vw;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(238, 238, 238);
+    transition: transform 0.3s ease;
+}
+#navh4_3:hover {
+    transform: translateY(-10px);
+    color: yellow;
+    cursor: pointer;
+}
+#navh4_2:hover {
+    transform: translateY(-10px);
+    color: yellow;
+    cursor: pointer;
+}
+#nav i2 {
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 1.3vh;
+}
+#nav i2:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    font-size:18px ;
+    color: yellow;
+}
+#navh4:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    color: yellow;
+}
+
+/* Login Card */
+.login-card {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(250, 249, 249, 0.34);
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+/* ---------- */
+
+/* Login Card Logo */
+.login-card-logo {
+    margin-bottom: 2rem;
+}
+
+.login-card-logo img {
+    width: 80px;
+}
+/* ---------- */
+
+/* Login Card Standard */
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #2d2a4d;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+/* ---------- */
+
+/* Login Card Header */
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 550;
+    margin-bottom: .5rem;
+}
+
+.login-card-header h1+div {
+    font-size: 1rem;
+    opacity: .8;
+}
+/* ---------- */
+
+/* Login Card Form */
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .6;
+}
+
+.login-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1 rem;
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* Login Card Footer */
+.login-card-footer {
+    margin-top: .5rem;
+    font-size: 1rem
+}
+/* ---------- */
+
+/* Login Card Form Elements */
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: rgba(255, 247, 247, 0.3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus {
+    background: rgb(243, 243, 243);
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.login-card button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(160, 160, 160, 0.379);
+    font-weight: 1000;
+    font-size:15px;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.login-card button:hover {
+    background-color: rgb(255, 255, 251);
+    cursor: pointer;
+}
+/* ---------- */
+
+/* Login Card Social Buttons */
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-card-social>div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login-card-social-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 254, 254, 0.6);
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.login-card-social-btns a:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+.login-card-footer{
+    color: #020101;
+}
+/* ---------- */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0 0; /* Adjust the padding */
+    }
+    .login-card {
+        width: 280px;
+        padding: 2rem;
+    }
+}
